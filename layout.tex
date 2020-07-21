@@ -1,0 +1,40 @@
+\documentclass[12pt, oneside, brazil, fleqn,
+	chapter=TITLE, section=TITLE]{abntex2}
+
+\usepackage{style/abnt}
+\usepackage{style/fei}
+\usepackage{style/style}
+
+\author{
+	Henrique Casares\\
+	Vini Lopes\\
+	Lucas Campos Martins Ferreira Braga
+}
+\orientador{Prof. Dr. Marco Antônio Assis de Melo}
+
+\title{nerves of steel platform}
+\data{2020}
+\local{São Bernardo do Campo -- SP}
+\instituicao{Centro Universitário FEI}
+
+\begin{document}
+\subfile{doc/abnt/capa.tex}
+\subfile{doc/abnt/folha_de_aprovacao.tex}
+\subfile{doc/abnt/dedicatoria.tex}
+\subfile{doc/abnt/agradecimentos.tex}
+\subfile{doc/abnt/epigrafe.tex}
+\subfile{doc/abnt/resumo.tex}
+\subfile{doc/abnt/abstract.tex}
+\subfile{doc/abnt/tables.tex}
+
+\subfile{doc/chapter/introducao.tex}
+\subfile{doc/chapter/fundamentacao.tex}
+\subfile{doc/chapter/hardware.tex}
+\subfile{doc/chapter/software.tex}
+\subfile{doc/chapter/metodo.tex}
+\subfile{doc/chapter/consideracoes.tex}
+\subfile{doc/chapter/example_chapter.tex}
+
+\nocite{*}
+\printbibliography[title=Referências]
+\end{document}

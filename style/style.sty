@@ -1,0 +1,22 @@
+\ProvidesPackage{style}
+
+\usepackage{subfiles}
+\usepackage{pdfpages}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{upgreek}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{transparent}
+\usepackage{minted}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+\usetikzlibrary{shapes,arrows.meta,positioning,calc}
+\tikzset{
+	block/.style = {draw, fill=white, rectangle,
+		minimum height=4em, text width=4.5em, align=center},
+	tmp/.style  = {coordinate}, 
+	input/.style = {coordinate},
+	output/.style= {coordinate}
+}

@@ -1,0 +1,31 @@
+\ProvidesPackage{abnt}
+
+\usepackage[backend=biber, style=abnt, language=brazil,
+	repeatfields=true, indent, giveninits]{biblatex}
+\addbibresource{doc/tcc.bib}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[bottom]{footmisc}
+\usepackage{float}
+
+\usepackage{graphicx}
+\graphicspath{"assets/static/img/"}
+
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+\counterwithout{equation}{chapter}
+
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\urlstyle{same}
+\setlength{\bibhang}{0pt}
+\setlength{\parindent}{3em}
+\setlist[itemize]{label=--}
+\setlist{leftmargin = \parindent, noitemsep, topsep=0pt}

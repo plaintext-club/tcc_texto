@@ -1,0 +1,154 @@
+\ProvidesPackage{fei}
+
+% Mod ABNT-FEI
+% Imagem
+
+\newcommand{\acite}[1]{\citeauthor*{#1}, \citeyear*{#1}}
+
+% Referencias
+\setlength\bibitemsep{\onelineskip}
+
+% Texto
+\usepackage{titlesec}
+
+\setlength\afterchapskip{1.0\onelineskip plus 0.5\onelineskip minus 0.2\onelineskip}
+
+\titlespacing*{\subsection}{0pt}{1.0\onelineskip plus 0.5\onelineskip minus 0.2\onelineskip}{1.0\onelineskip plus 0.5\onelineskip minus 0.2\onelineskip}
+
+% Estilo de pagina
+\renewcommand{\textual}{%
+  \ifthenelse{\equal{\ABNTEXisarticle}{true}}{%
+    \pagestyle{plain}%
+  }{%else  
+    \pagestyle{abntchapfirst}%
+    \aliaspagestyle{chapter}{abntchapfirst}% customizing chapter pagestyle
+  }  
+  \nouppercaseheads%
+  \bookmarksetup{startatroot}% 
+}
+
+% Titulos
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsectionfont}{\mdseries}
+\renewcommand{\ABNTEXsectionfontsize}{\ABNTEXchapterfontsize}
+
+\renewcommand{\ABNTEXsubsectionfont}{\ABNTEXsectionfont\bfseries}
+\renewcommand{\ABNTEXsubsectionfontsize}{\ABNTEXchapterfontsize}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\ABNTEXsectionfont \bfseries \itshape}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\ABNTEXchapterfontsize}
+
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\ABNTEXsectionfont \itshape}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\ABNTEXchapterfontsize}
+
+% Sumário
+
+\setlength{\cftbeforechapterskip}{0em}
+
+\renewcommand{\listfigurename}{LISTA DE\c{C}\~{O}ES}
+
+\makeatletter
+\let\oldcontentsline\contentsline
+\def\contentsline#1#2{%
+  \expandafter\ifx\csname l@#1\endcsname\l@section
+    \expandafter\@firstoftwo
+  \else
+    \expandafter\@secondoftwo
+  \fi
+  {%
+    \oldcontentsline{#1}{\MakeTextUppercase{#2}}%
+  }{%
+    \expandafter\ifx\csname l@#1\endcsname\l@chapter
+      \expandafter\@firstoftwo
+    \else
+      \expandafter\@secondoftwo
+    \fi
+    {%
+      \oldcontentsline{#1}{\MakeTextUppercase{#2}}%
+    }{%
+      \oldcontentsline{#1}{#2}% %
+    }%
+  }%
+}
+\makeatother
+
+
+\renewcommand{\cftchapterfont}{\bfseries}
+\renewcommand{\cftchapterpagefont}{\normalsize\cftchapterfont}
+
+\renewcommand{\cftsectionfont}{\mdseries}
+\renewcommand{\cftsectionpagefont}{\cftsectionfont}
+
+\renewcommand{\cftsubsectionfont}{\normalsize\bfseries}
+\renewcommand{\cftsubsectionpagefont}{\cftsubsectionfont}
+
+\renewcommand{\cftsubsubsectionfont}{\bfseries \itshape}
+\renewcommand{\cftsubsubsectionpagefont}{\cftsubsubsectionfont}
+
+\renewcommand{\cftparagraphfont}{\itshape}
+\renewcommand{\cftparagraphpagefont}{\cftparagraphfont}
+
+% Capa
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+    \ABNTEXsectionfont\MakeUppercase\imprimirautor
+
+    \vfill
+    \begin{center}
+    \ABNTEXchapterfont\bfseries\MakeUppercase\imprimirtitulo
+    \end{center}
+    \vfill
+    
+    \imprimirlocal
+
+    \imprimirdata
+    
+    \vspace*{1cm}
+  \end{capa}
+}
+
+% Folha de Rosto
+
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+  \begin{center}
+
+    %\vspace*{1cm}
+    {\ABNTEXsectionfont\MakeUppercase\imprimirautor}
+  
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+      \ABNTEXchapterfont\bfseries\MakeUppercase\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+  
+    \abntex@ifnotempty{\imprimirpreambulo}{%
+      \hspace{.45\textwidth}
+      \begin{minipage}{.5\textwidth}
+        \SingleSpacing
+         \imprimirpreambulo
+         \SingleSpacing
+         {\imprimirorientadorRotulo~\imprimirorientador\par}
+       \end{minipage}%
+       \vspace*{\fill}
+    }%
+
+    %{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+
+    
+    \abntex@ifnotempty{\imprimircoorientador}{%
+       {\imprimircoorientadorRotulo~\imprimircoorientador}%
+    }%
+    \vspace*{\fill}
+
+    {\imprimirlocal}
+    \par
+    {\imprimirdata}
+    \vspace*{1cm}
+
+  \end{center}
+}
+\makeatother
