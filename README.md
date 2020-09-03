@@ -15,7 +15,7 @@ Our final graduation project written in a modular ABNT compliant LaTeX document.
 
 # Authors
 - Henrique Casares
-- Vini Lopes
+- Vinicius Lopes Silva
 - Lucas Braga
 
 # Resources
