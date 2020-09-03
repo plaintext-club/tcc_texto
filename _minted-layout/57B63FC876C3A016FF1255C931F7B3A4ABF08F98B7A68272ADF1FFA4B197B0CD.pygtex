@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{defmodule} \PYG{n+no}{MyApp} \PYG{k}{do}
+  \PYG{k}{def} \PYG{n+nf}{hello} \PYG{k}{do}
+    \PYG{l+s+ss}{:world}
+  \PYG{k}{end}
+\PYG{k}{end}
+\end{Verbatim}
