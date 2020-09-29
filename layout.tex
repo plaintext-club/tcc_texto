@@ -1,13 +1,15 @@
 \documentclass[12pt, oneside, brazil, fleqn,
 	chapter=TITLE, section=TITLE]{abntex2}
-
-\usepackage{style/abnt}
+\usepackage[backend=biber, style=abnt]{biblatex}	
+	
 \usepackage{style/fei}
 \usepackage{style/style}
 
+\addbibresource{References.bib}
+
 \author{
 	Henrique Casares\\
-	Vinicius Lopes Silva\\
+ 	Vinicius Lopes Silva\\
 	Lucas Campos Martins Ferreira Braga
 }
 \orientador{Prof. Dr. Marco Antônio Assis de Melo}
@@ -36,5 +38,5 @@
 \subfile{doc/chapter/example_chapter.tex}
 
 \nocite{*}
-\printbibliography[title=Referências]
+\printbibliography[title=Referências] 
 \end{document}
