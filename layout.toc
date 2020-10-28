@@ -1,0 +1,89 @@
+\changetocdepth {4}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {brazil}{}
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Sum\'ario}{8}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Lista de ilustra\c {c}\~{o}es}{9}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdução}}{10}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Objetivo}{10}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamentação teórica}}{12}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Internet das Coisas}{12}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Evolução da Internet das Coisas}{12}{subsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Internet das Coisas e Indústria 4.0}{12}{subsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Moddelo ultilizado para aplicação}{13}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}REST API}{13}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Backend}{13}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Conceito de backend}{13}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Linguagem Banckend}{13}{subsection.2.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.3}Nerves}{14}{subsection.2.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.4}Phoenix}{14}{subsection.2.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Frontend}{14}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Protocolos de comunicação}{15}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}i2c}{15}{subsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.2}1-wire}{16}{subsection.2.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.3}UART}{16}{subsection.2.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Modelagem do Hardware}{16}{section.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Sensores}{17}{section.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Estrutura do Software}{17}{section.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.10}Método}{17}{section.2.10}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Modelagem do hardware}}{19}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Modelagem do software}}{20}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Método}}{21}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Considerações Finais}}{22}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Example chapter}}{23}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Using figures}{23}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Using code}{23}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}typed}{24}{subsection.7.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.2}from file}{24}{subsection.7.2.2}%

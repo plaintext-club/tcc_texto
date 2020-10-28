@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'layout.blg'
+[159] biber:322> INFO - === ter out 27, 2020, 23:54:28
+[189] Utils.pm:309> ERROR - layout.bcf is malformed, last biblatex run probably failed. Deleted layout.bbl
+[189] Biber.pm:132> INFO - ERRORS: 1
