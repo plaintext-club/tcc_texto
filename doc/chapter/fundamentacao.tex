@@ -87,23 +87,33 @@ Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang no
 \subsection{Phoenix}
 \hspace*{3em}Phoenix é um framework desenvolvido em Elixir para implementação de aplicações WEB, que usa todo o potencial da linguagem Elixir, com isso desfrutando da concorrência fornecida pela VM BEAM, baixa tolerância a falha e baixa latência.  Além de aumentar o desempenho do desenvolvimento de  uma aplicação WEB também conta com diversos recurso que são disponibilizados de forma modular\cite{phoenix}.
 
-\section{Frontend}
-\hspace*{3em}\blindtext[1]
 
 \begin{figure}[H]
 \centering
-\caption{Diagrama do software}
-\includegraphics[width=0.5\textwidth]{assets/static/img/diagrama_tcc.PNG}
+\caption{Diagrama simplificado da arquitetura do software}
+\includegraphics[width=0.5\textwidth]{assets/static/img/diagrama_tcc.jpg}
 \label{fig:diagrama_sw}
 \end{figure}
 
-\section{Frameworks}
-\hspace*{3em}\blindtext[1]
-\subsection{Phoenix}
-\hspace*{3em}\blindtext[1]
-\subsection{Nerves}
-\hspace*{3em}\blindtext[1]
-\section{Arquivo JSON e XML}
+\section{Frontend}
+\subsection{Conceito de frontend}
+\hspace*{3em}Em uma aplicação WEB a camada de front-end é responsável por realizar a interação com usuário, e  também é conhecida por client-side (lado do cliente), pois todos os recursos desenvolvidos são executados em um browser (navegador web) alocado em um PC (computador pessoal). Para que essa interface com o usuário seja criada sob demanda  é necessário um fluxo de comunicação entre o browser e o servidor. Em geral, o browser solicita  a partir do protocolo HTTP uma requisição para o servidor onde está hospedado todas as informações visuais necessárias, o back-end do servidor recebe essa requisição então realiza as alterações necessárias no servidor e retorna com o conteúdo solicitado. O conteúdo é composto por códigos HTML, CSS e Javascript, o browser recebe esse pacote e renderiza de forma visual a informação solicitada, essas são  as três tecnologias essenciais para a construção de uma interface visual web.\cite{frontend}
+
+\subsection{Mobile frontend}
+\hspace*{3em}Por  muitos anos o front-end teve como objetivo o browser para PC, portando os layouts eram desenvolvidos para telas dentro das dimensões padrões dos PC. Entretanto, com o advento dos dispositivos móveis foram necessárias adaptações à tecnologia, que apesar de muito prematura, já demonstrava importante potencial. Criaram-se então os conceitos de design responsivo e mobile-first (movél primeiro) que tem como objetivo criar interfaces que podem ser adaptadas para quaisquer que sejam as dimensões das telas, desde um PC até dispositivo como smartwatch.\par
+Com a tendência de acesso à páginas web a partir de quaisquer dispositivos móveis, houve um realce no potencial da tecnologia IoT, viabilizando o controle de qualquer dispositivo a partir de até mesmo um pequeno smartwatch, em qualquer lugar do mundo.\cite{mobilefrontend}
+
+\subsection{Hyper Text Markup Language (HTML)}
+\hspace*{3em}É uma linguagem de marcação padrão para o desenvolvimento web, que descreve a estrutura de uma webpage de forma semântica, por isso é considerada uma linguagem de marcação ao invés de uma linguagem de programação. Essa descrição é renderizada pelo navegador web em uma forma gráfica.\cite{frontend}
+
+
+\subsection{Cascading Style Sheets (CSS)}
+\hspace*{3em}Também é considerada uma linguagem de marcação, porém com o objetivo de criar uma folha de estilo para páginas web. É muito utilizada para modificar a estrutura de uma páginas web escrita em HTML. O CSS traz um aspecto mais moderno com muito mais recursos visuais e de design para as aplicações web. Isso se dá pois o CSS permite alterações no layout geral do texto e da página, além de permitir mais agilidade nas aplicações, por diminuir o tamanho dos arquivos em relação ao HTML.\cite{frontend}
+
+\subsection{Javascript}
+\hspace*{3em}Javascript é uma linguagem de programação interpretada, multi paradigma, dinâmica e sem tipos, voltada para desenvolvimento web. Em comparação às linguagens HTML e CSS, que são voltadas para a criação de elementos estáticos na aplicação web, o Javascript  tem com objetivo permitir o desenvolvimento de aplicações mais complexas, trazendo mais dinâmica e versatilidade para as aplicações web.\cite{frontend}
+
+\subsection{Arquivo JSON e XML}
 \hspace*{3em}Para padronizar a transmissão de informações atavés da aplicações e dispositivos diferentes, foram criados vários formatos de texto para sua formatação ideal à aplicação, desenvolvedor e ao próprio usuário. Dessa forma a escolha deve ser analisada para melhor praticidade, desempenho e segurança. O formato JSON (\textit{JavaScript Object Notation}) é utilizado em aplicações compactas, de padrão aberto e de fácil compreensão , sendo muito prática para serem visualizadas de forma geral e escritas ao mesmo tempo, ao contrário de formatações como o XML (\textit{Extensible Markup Language}), O JSON é uma formatação totalmente independente que nasceu do JavaScript, porém usa convensões familiares de outras linguagens da família C(C, C++, C#), Python, Pearl, JavaScript, o que a torna muito prática para formatação em várias plataformas. A seguir, exemplos da formatação em XML e JSON:
 \begin{enumerate}[label=\alph*)]
 \itemsep0em
@@ -150,6 +160,21 @@ Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang no
 \end{enumerate}
 
 O formato JSON, como mencionado, tem um visual mais limpo, com uma leitura mais simples do arquivo e maior velocidade na manipulação e transmissão dos dados.
+
+\begin{figure}[H]
+\centering
+\caption{Front end desenvolvido para controlar o dispostivos IoT}
+\includegraphics[width=0.5\textwidth]{assets/static/img/front_by_us.jpeg}
+\label{fig:frontend}
+\end{figure}
+
+\section{Segurança em software}
+\hspace*{3em}Com o crescimento da tecnologia IoT se estabeleceu um novo problema de segurança uma vez que existe uma grande diversidade e quantidade de objetos conectados na rede.
+O principal problema se dá pela falta de cuidado no design de software o que abre caminho para que malwares e backdoors se instalem. Além disso, identificar a localização dos objetos na rede e gerar de métodos de autenticação seguros (métodos tradicionais não são aplicáveis devido a heterogeneidade dos objetos) são importantes problemas a serem solucionados. Outro obstáculo está em manter a privacidade dos dispositivos IoT. Durante o uso da tecnologia, dados do comportamento e da rotina diária são coletados a fim de melhorar os serviços e a experiência pessoal de cada usuário. Entretanto, as informações coletadas descrevem o usuário detalhadamente, assim é necessário cautela quanto à exposição desses dados, para evitar o uso indevido de informações pessoais. 
+É importante ainda ter em mente, que alguns dispositivos possuem capacidade de computacional limitada e restrições de consumo elétricos por terem  baterias limitadas por tanto não suportam  sistemas complexos de criptografia por exigirem poder computacional elevado e consequentemente aumentando o consumo elétrico [8][9] e por isso diversificar a criptografia assegura maior privacidade ao usuário. Algoritmos mais simplificados de criptografia são mais adequados para dispositivos com restrição de recursos. Uma segunda solução é ocultar alguns dados, porém isso ainda é um obstáculo uma vez que os objetos conectados precisam ter acesso a tais informações.\cite{seguranca}
+
+
+
 \section{Protocolos de comunicação}
 \hspace*{3em}Com a demanda do uso de tecnologias relacionadas à área de Internet das Coisas, várias camadas de comunicação e estruturas se adaptam para maior praticidade do uso de dispositivos diversos, que por sua grande maioria se tratam de microcontroladores e sensores, na qual estão conectados entre si, seja por LAN (\emph{Local Area Network}) ou WiFi (\emph{Wireless Fidelity}). Para que essa comunicação seja eficaz e segura, foram padronizados protocolos de comunicação que são vastamente utilizados no período atual por várias empresas.
 
