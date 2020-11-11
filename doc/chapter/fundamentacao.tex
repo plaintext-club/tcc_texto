@@ -3,10 +3,10 @@
 
 \begin{document}
 \chapter{Fundamentação teórica}
-\hspace*{3em}O estudo, entendimento e compreensão dos conceitos abordados nesse projeto são de suma extrema importância para sua compreensão.
+\hspace*{3em}O estudo, entendimento e compreensão dos conceitos abordados nesse projeto são de extrema importância para sua compreensão.
 
 \section{Internet das Coisas}
-\hspace*{3em}Com o desenvolvimento e demanda massiva de um mundo mais tecnológico, muitos conceitos sobre tecnologia foram surgindo e moldando a sociedade \acite{iot}. Uma dessas tecnologias em que fazemos uso é a Internet das Coisas (\emph{Internet of Things}), na qual podemos brevemente resumir em um sistema de equipamentos, dispositivos, máquinas, objetos, animais ou pessoas que possam comunicar entre si, com identificações únicas, capazaes de transferir dados através de conexões ou redes sem necessitar interação humana ou de um humano com uma máquina \cite{iot}. Exemplos reais são carros capazes de enviar sinais ao celular do motorista quando a pressão dos pneus está baixa ou monitoramento de um implante de coração pela central de um hospital, em que esses dados possam ser endereçados utilizando um protocolo de internet (IP). O objetivo principal da Internet das Coisas é fazer com que essas comunicações sejam mais eficientes, rápidas, seguras e até realizar tomadas de decisões. Um sistema em que utiliza o conceito de internet das coisas pode ser organizado em:
+\hspace*{3em}Com o desenvolvimento e demanda massiva de um mundo mais tecnológico, muitos conceitos sobre tecnologia foram surgindo e moldando a sociedade \acite{iot}. Uma dessas tecnologias em que fazemos uso é a Internet das Coisas (\emph{Internet of Things}), na qual podemos brevemente resumir em um sistema de equipamentos, dispositivos, máquinas, objetos ou pessoas que possam comunicar entre si, com identificações únicas, capazaes de transferir dados através de conexões ou redes sem necessitar interação humana ou de um humano com uma máquina \cite{iot}. Exemplos reais são carros capazes de enviar sinais ao celular do motorista quando a pressão dos pneus está baixa ou monitoramento de um implante de coração pela central de um hospital, em que esses dados possam ser endereçados utilizando um protocolo de internet (IP). O objetivo principal da Internet das Coisas é fazer com que essas comunicações sejam mais eficientes, rápidas, seguras e até realizar tomadas de decisões. Um sistema em que utiliza o conceito de internet das coisas pode ser organizado em:
 \begin{enumerate}[label=\alph*)]
 \itemsep0em
 \item coleta de dados sendo gerados por sensores, aparelhos ou máquinas;
@@ -14,11 +14,13 @@
 \item análise dos dados para realizar as ações ou tomadas de decisões.
 \end{enumerate}
 
+\hspace*{3em} Na figura \ref{fig:iotsystem} de um sistema \emph{IoT} se comunicando, onde uma camada coleta os dados por meio de um dispositivo (sensor, antena ou microcontrolador), paraserem coletadas e um \emph{hub} (dispositivo intermediário, ou responsável pela transmissão dos dados), para ao final serem analisados e as ações sejam tomadas.
+
 \begin{figure}[H]
 \centering
 \caption{Exemplo de um sistema \emph{IoT}}
 \includegraphics[width=0.7\textwidth]{assets/static/img/iot_system.jpg}
-\label{fig:i2c}
+\label{fig:iotsystem}
 
 \begin{minipage}{0.5\textwidth}
 \raggedright \footnotesize Fonte: Retirado de \acite{iot_system} 
@@ -26,13 +28,14 @@
 \end{figure}
 
 \subsection{Evolução da Internet das Coisas}
-\hspace*{3em}Na década de 90 a internet foi capaz de facilitar muitos negócios, porém era muito impactada ainda pela velocidade de conexão e dificuldade de acesso \cite{iot_evolution}. Nos anos 2000 a conectivade com a internet estava muito mais popular ao ponto de muitas aplicações estarem utilizando e que hoje dependem muito dessa tecnologia chamada internet, porém, ainda dependem da interação do ser humano ou de outras máquinas para terem algum resultado e agregarem valor, seja para acessar uma página da internet para pesquisas ou realizar negócios em um site de vendas, sendo que o maior valor está em poder realizar essas "coisas" de maneira dinâmica e automatizada, na qual podemos citar Internet das Coisas. Essa ideia é mais comum ainda nos dias atuais, pois temos várias "coisas" dentro de residências em que se comunicam de maneira automatizadas, em que muitas das vezes, podem  ser controladas via um aplicativo de celular, um navegador de internet no computador ou até mesmo uma central eletrônica.
+\hspace*{3em}Na década de 90 a internet foi capaz de facilitar muitos negócios, porém era muito impactada ainda pela velocidade de conexão e dificuldade de acesso \cite{iot_evolution}. Nos anos 2000 a conectivade com a internet estava muito mais popular ao ponto de muitas aplicações a estarem utilizando e que hoje dependem muito dessa tecnologia, porém, ainda dependem da interação do ser humano ou de outras máquinas para terem algum resultado e agregarem valor, seja para acessar uma página da internet para pesquisas ou realizar negócios em um site de vendas, sendo que o maior valor está em poder realizar essas "coisas" de maneira dinâmica e automatizada, na qual podemos citar Internet das Coisas. \par
+\hspace*{3em}Essa ideia é mais comum ainda nos dias atuais, pois temos várias "coisas" dentro de residências em que se comunicam de maneira automatizadas, em que muitas das vezes, podem  ser controladas via um aplicativo de celular, um navegador de internet no computador ou até mesmo uma central eletrônica. Na Figura \ref{fig:iothou} temos um exemplo de uma casa inteligente conectada.
 
 \begin{figure}[H]
 \centering
 \caption{Exemplo de uma casa conectada por um sistema \emph{IoT}}
 \includegraphics[width=0.7\textwidth]{assets/static/img/iothouse.jpg}
-\label{fig:i2c}
+\label{fig:iothou}
 
 \begin{minipage}{0.5\textwidth}
 \raggedright \footnotesize Fonte: Retirado de \acite{iothouse} 
@@ -41,12 +44,13 @@
 
 \subsection{Indústria 4.0}
 \hspace*{3em}Com a evolução da era digital, muitos setores foram impctados para ter seu melhor desempenho e crescimento. A transformação digitalização da manufatura que ocorreu durante vários anos, desde a primeira revolução industrial em que eram utilizadas máquinas à vapor, a segunda na qual utilizava eletricidade como revolução, a terceira em que faz o uso de computadores e máquinas eletrônicas até a quarta na qual tende a emergir a terceira revolução com computadores mais avançados capazes de automatizar uma linha completa com sistemas inteligentes e interligados em que o ponto principal é o tratamento de dados sendo alimentados e gerados por esses computadores \acite{ind4}.
+\hspace*{3em}A figura \ref{fig:ind} demonstra essa evolução.
 
 \begin{figure}[H]
 \centering
 \caption{Revoluções Industriais}
 \includegraphics[width=0.5\textwidth]{assets/static/img/ind4.jpg}
-\label{fig:i2c}
+\label{fig:ind}
 
 \begin{minipage}{0.7\textwidth}
 \raggedright \footnotesize Fonte: Retirado de \acite{ind4} 
@@ -62,14 +66,14 @@
     \item aprendizado de máquina (\emph{Machine Learning}).
 \end{enumerate}
 
-\hspace*{3em}Esses exemplos citados são meios utilizados para trazer valores dentro da indústria por exexmplo, para que sejam feitas análises através de inúmeros dados gerados e coletados sobre performance, manutenção, rendimento e defeitos com o objetivo de identificar oportunidades, otimizar logística e a sua cadeia de gestão (\emph{Supply Chain}). Robôs inteligentes para facilitar o processo ou logística de linhas, carros autônomos para automatizar o processo e segurança de locomoção, máquinas autônomas que possam ser totalmente independentes da interação humana para executar sua função e até impressão 3D são alguns dos muitos sucessos da aplicação da Indústria 4.0 no mercado atual. Apesar de parecer que estamos vivenciando essa revolução hoje em dia, estima-se que essa revolução irá permanecer em evolução durante 30 anos em que aos poucos as empresas vão adotando em seus processos.
+\hspace*{3em}Esses exemplos citados são meios utilizados para trazer valores dentro da indústria por exemplo, para que sejam feitas análises através de inúmeros dados gerados e coletados sobre performance, manutenção, rendimento e defeitos com o objetivo de identificar oportunidades, otimizar logística e a sua cadeia de gestão (\emph{Supply Chain}). Robôs inteligentes para facilitar o processo ou logística de linhas, carros autônomos para automatizar o processo e segurança de locomoção, máquinas autônomas que possam ser totalmente independentes da interação humana para executar sua função e até impressão 3D são alguns dos muitos sucessos da aplicação da Indústria 4.0 no mercado atual. Apesar de parecer que estamos vivenciando essa revolução hoje em dia, estima-se que essa revolução irá permanecer em evolução durante 30 anos em que aos poucos as empresas vão adotando em seus processos.
 
-\section{Modelo ultilizado para aplicação}
-\hspace*{3em}Para o desenvolvimento da aplicação  utilizamos o modelo cliente servidor em três camadas, esse modelo permite a modularização da aplicação  em três camadas,  camada de interface com usuário, também conhecida como front end, camada lógica onde está inserida as regras de negócios, também conhecido como backend e a camada de dados  onde se realiza a comunicação com o banco de dados, essa arquitetura permite um desacoplamento de código que viabiliza a atualização das partes de forma independente e da tecnologia \cite{3layers}
-\section{REST API}
+\section{Modelo utilizado para aplicação}
+\hspace*{3em}Para o desenvolvimento da aplicação utilizamos o modelo cliente servidor em três camadas, esse modelo permite a modularização da aplicação  em três camadas,  camada de interface com usuário, também conhecida como front end, camada lógica onde está inserida as regras de negócios, também conhecido como \emph{back-end} e a camada de dados  onde se realiza a comunicação com o banco de dados, essa arquitetura permite um desacoplamento de código que viabiliza a atualização das partes de forma independente e da tecnologia \cite{3layers}
+\section{Conceito do REST API}
 \hspace*{3em}REST (Transferência representacional de estado) API (Interface de programação de aplicação) analisando os conceitos isolados.\par
 API é um interface de comunicação  disponível por software com regras estabelecidas para que haja o entendimento de ambas as partes. Esse conceito é aplicado para criar uma camada de abstração, no qual para utilizar os recursos de um determinado software é apenas necessário o entendimento da interface disponibilizada por um software, eliminando a  necessidade do entendimento total do software, além de viabilizar o conceito de modularização de arquitetura de software. \cite{16} \par 
-REST é um modelo de arquitetura criado para suprir conceitos de qualidade e funcionalidade, em princípio para sistemas distribuídos. Acabou sendo utilizada largamente em servidores WEB, tanto parada da maneira em que a arquitetura define um conjunto de restrições para uma arquitetura estilo REST, quanto para padrões uniformes para interfaces, sem conservação de estado e separação total do cliente e servidor. Com isso, permitindo a interoperabilidade entre sistemas. Quando um servidor WEB segue esses conceitos, pode ser denominado de REST FULL.\par
+REST é um modelo de arquitetura criado para suprir conceitos de qualidade e funcionalidade, em princípio para sistemas distribuídos. Acabou sendo utilizada largamente em servidores WEB, tanto para a maneira em que a arquitetura define um conjunto de restrições para uma arquitetura estilo REST, quanto para padrões uniformes para interfaces, sem conservação de estado e separação total do cliente e servidor. Com isso, permitindo a interoperabilidade entre sistemas. Quando um servidor WEB segue esses conceitos, pode ser denominado de REST FULL.\par
 Portando uma REST API é uma interface que aplica os conceito REST para sua implementação\cite{19}. Quando o protocolo HTTP é utilizado, o URI (Identificador de recursos uniformes) se torna uma representação dos dados e os métodos HTTP são utilizados para manipular esses dados \cite{16}, com os métodos:
 
 \begin{enumerate}[label=\alph*)]
@@ -81,8 +85,8 @@ Portando uma REST API é uma interface que aplica os conceito REST para sua impl
 \end{enumerate}
 
 \section{Backend}
-\subsection{Conceito de backend}
-\hspace*{3em}Uma aplicação WEB em geral é dividida  em duas principais partes, a camada do \emph{frontend} que é responsável pela interação com o usuário de forma gráfica e o \emph{backend} é responsável por entregar toda a lógica necessária para o front end, geralmente o \emph{backend} é dividido em três elementos responsáveis por implementar a lógica do negócio \cite{16}:
+\subsection{Conceito de Back-end}
+\hspace*{3em}Uma aplicação WEB em geral é dividida  em duas principais partes, a camada do \emph{front-end} que é responsável pela interação com o usuário de forma gráfica e o \emph{back-end} é responsável por entregar toda a lógica necessária para o \emph{front-end}, geralmente o \emph{back-end} é dividido em três elementos responsáveis por implementar a lógica do negócio \cite{16}:
 
 \begin{enumerate}[label=\alph*)]
 \itemsep0em
@@ -91,13 +95,13 @@ Portando uma REST API é uma interface que aplica os conceito REST para sua impl
     \item servidor.
 \end{enumerate}
 
-\subsection{Linguagem Backend}
-\hspace*{3em}A linguagem mais utilizada para programar dispositivos IoT é a linguagem C por ser mais otimizada para essa finalidade, mas por ser uma linguagem de baixo nível, exige uma extensa dedicação de tempo e torna-se moroso para soluções mais complexas. Para contornar essas deficiências, a linguagem Elixir pode ser uma ótima alternativa. Por ser uma linguagem de alto nível que não compromete tanto a performance do sistema.\par
-A linguagem Erlang/Elixir é uma linguagem funcional desenvolvida para atingir alta performance e confiabilidade. Foi desenvolvida para aplicações voltadas para telecomunicações que exigem, baixa tolerancia de falhas, distribuida e \emph{real-time} (tempo de execução). Por isso conta com um conjunto bibliotecas para desenvolvimento de sistemas de alta confiabilidade conhecida como OTP.\par
+\subsection{Linguagem Back-end}
+\hspace*{3em}A linguagem mais utilizada para programar dispositivos IoT é a linguagem C por ser mais otimizada para essa finalidade, mas por ser uma linguagem de baixo nível, exige uma extensa dedicação de tempo e torna-se moroso para soluções mais complexas. Para contornar essas deficiências, a linguagem Elixir pode ser uma ótima alternativa, por ser uma linguagem de alto nível que não compromete tanto a performance do sistema.\par
+A linguagem Erlang/Elixir é uma linguagem funcional desenvolvida para atingir alta performance e confiabilidade. Foi desenvolvida para aplicações voltadas para telecomunicações que exigem, baixa tolerância de falhas, distribuida e \emph{real-time} (tempo de execução). Por isso conta com um conjunto bibliotecas para desenvolvimento de sistemas de alta confiabilidade conhecida como OTP.\par
 Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang nomeada como BEAM. A linguagem Elixir é relativamente nova, mas já existem diversas aplicações que a utilizam e inclusive existem recursos para dispositivo embarcado como o framework Nerves \cite{ElixirorIoT} e para implementação de aplicações WEB como o framework Phoenix.
 
 \subsection{Nerves}
-\hspace*{3em}Nerves é um framework para desenvolvimento de projetos embarcados, baseado em Linux que apenas executa a VM BEAM, portanto proporcionando a utilização da linguagem Elixir para o desenvolvimento das aplicações,  desfrutando do potencial da linguagem para implementação de projetos embarcados. Além disso este framework proporciona diversas vantagens em relação ao processo tradicional de programação de embarcados \cite{nerves}, como:
+\hspace*{3em}Nerves é um framework para desenvolvimento de projetos embarcados, baseado em Linux que apenas executa a VM BEAM, portanto, proporcionando a utilização da linguagem Elixir para o desenvolvimento das aplicações,  desfrutando do potencial da linguagem para implementação de projetos embarcados. Além disso, este framework proporciona diversas vantagens em relação ao processo tradicional de programação de embarcados \cite{nerves}, como:
 \begin{enumerate}[label=\alph*)]
 \itemsep0em
     \item permitir a fácil portabilidade para diferentes HW (hardware) embarcados e com uma vasta abrangência para diferentes HW embarcados;
@@ -108,7 +112,8 @@ Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang no
 \end{enumerate}
 
 \subsection{Phoenix}
-\hspace*{3em}Phoenix é um framework desenvolvido em Elixir para implementação de aplicações WEB, que usa todo o potencial da linguagem Elixir, com isso desfrutando da concorrência fornecida pela VM BEAM, com baixa tolerância a falha e baixa latência.  Além de aumentar o desempenho do desenvolvimento de uma aplicação WEB também conta com diversos recurso que são disponibilizados de forma modular\cite{phoenix}.
+\hspace*{3em}Phoenix é um framework desenvolvido em Elixir para implementação de aplicações WEB, que usa todo o potencial da linguagem Elixir, com isso desfrutando da concorrência fornecida pela VM BEAM, com baixa tolerância a falha e baixa latência.  Além de aumentar o desempenho do desenvolvimento de uma aplicação WEB também conta com diversos recurso que são disponibilizados de forma modular \cite{phoenix}.
+\hspace*{3em}Na figura \ref{fig:diagrama_sw} temos um diagrama detalhado da arquitetura utilizada no projeto.
 
 \begin{figure}[H]
 \centering
@@ -118,11 +123,11 @@ Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang no
 \end{figure}
 
 \section{Frontend}
-\subsection{Conceito de frontend}
+\subsection{Conceito de Front-end}
 \hspace*{3em}Em uma aplicação WEB a camada de front-end é responsável por realizar a interação com usuário, e  também é conhecida por \emph{client-side} (lado do cliente), pois todos os recursos desenvolvidos são executados em um \emph{web browser} (navegador web) alocado em um computador pessoal. Para que essa interface com o usuário seja criada sob demanda, é necessário um fluxo de comunicação entre o \emph{browser} e o servidor. Em geral, o \emph{browser} solicita a partir do protocolo HTTP uma requisição para o servidor onde está hospedado todas as informações visuais necessárias, o backend do servidor recebe essa requisição, então realiza as alterações necessárias no servidor e retorna com o conteúdo solicitado. O conteúdo é composto por códigos HTML, CSS e JavaScript, o \emph{browser} recebe esse pacote e renderiza de forma visual a informação solicitada. Essas são as três tecnologias essenciais para a construção de uma interface visual web.\cite{frontend}
 
-\subsection{Mobile frontend}
-\hspace*{3em}Por  muitos anos o front-end teve como objetivo o \emph{browser} para PC, portando os layouts eram desenvolvidos para telas dentro das dimensões padrões dos computadores. Entretanto, com o advento dos dispositivos móveis, foram necessárias adaptações à tecnologia que apesar de muito prematura, já demonstrava importante potencial. Criaram-se então os conceitos de \emph{design} responsivo e \emph{mobile-first} (movél primeiro) que tem como objetivo criar interfaces que podem ser adaptadas para quaisquer que sejam as dimensões das telas, desde um computador até dispositivos como \emph{smartwatch}.\par
+\subsection{Mobile Front-end}
+\hspace*{3em}Por  muitos anos o \emph{front-end} teve como objetivo o \emph{browser} para PC, portanto, os layouts eram desenvolvidos para telas dentro das dimensões padrões dos computadores. Entretanto, com o advento dos dispositivos móveis, foram necessárias adaptações à tecnologia que apesar de muito prematura, já demonstrava importante potencial. Criaram-se então os conceitos de \emph{design} responsivo e \emph{mobile-first} (movél primeiro) que tem como objetivo criar interfaces que podem ser adaptadas para quaisquer que sejam as dimensões das telas, desde um computador até dispositivos como \emph{smartwatch}.\par
 Com a tendência de acesso à páginas web a partir de quaisquer dispositivos móveis, houve um realce no potencial da tecnologia IoT, viabilizando o controle de qualquer dispositivo a partir de até mesmo um pequeno \emph{smartwatch} em qualquer lugar do mundo.\cite{mobilefrontend}
 
 \subsection{Hyper Text Markup Language (HTML)}
@@ -183,8 +188,8 @@ Com a tendência de acesso à páginas web a partir de quaisquer dispositivos m�
 O formato JSON, como mencionado, tem um visual mais limpo, com uma leitura mais simples do arquivo e maior velocidade na manipulação e transmissão dos dados.
 
 \section{Segurança em software}
-\hspace*{3em}Com o crescimento da tecnologia \emph{IoT} se nasceram novos problemas de segurança, uma vez que existe uma grande diversidade e quantidade de objetos conectados na rede. O principal problema se dá pela falta de cuidado no design de software o que abre caminho para que \emph{malwares} e \emph{backdoors} se instalem. Além disso, identificar a localização dos objetos na rede e gerar de métodos de autenticação seguros (métodos tradicionais não são aplicáveis devido a heterogeneidade dos objetos) são importantes problemas a serem solucionados. Outro obstáculo está em manter a privacidade dos dispositivos \emph{IoT}. Durante o uso da tecnologia, dados do comportamento e da rotina diária são coletados a fim de melhorar os serviços e a experiência pessoal de cada usuário. Entretanto, as informações coletadas descrevem o usuário detalhadamente, assim é necessário cautela quanto à exposição desses dados, para evitar o uso indevido de informações pessoais. 
-É importante ainda ter em mente, que alguns dispositivos possuem capacidade de computacional limitada e restrições de consumo elétricos por terem  baterias limitadas por tanto não suportam  sistemas complexos de criptografia por exigirem poder computacional elevado e consequentemente aumentando o consumo elétrico, sendo importante diversificar a criptografia assegura maior privacidade ao usuário. Algoritmos mais simplificados de criptografia são mais adequados para dispositivos com restrição de recursos. Uma segunda solução é ocultar alguns dados, porém isso ainda é um obstáculo uma vez que os objetos conectados precisam ter acesso a tais informações. \cite{seguranca}
+\hspace*{3em}Com o crescimento da tecnologia \emph{IoT}, nasceram novos problemas de segurança, uma vez que existe uma grande diversidade e quantidade de objetos conectados na rede. O principal problema se dá pela falta de cuidado no design de software o que abre caminho para que \emph{malwares} e \emph{backdoors} se instalem. Além disso, identificar a localização dos objetos na rede e gerar métodos de autenticação seguros (métodos tradicionais não são aplicáveis devido a heterogeneidade dos objetos) são importantes problemas a serem solucionados. Outro obstáculo está em manter a privacidade dos dispositivos \emph{IoT}. Durante o uso da tecnologia, dados do comportamento e da rotina diária são coletados a fim de melhorar os serviços e a experiência pessoal de cada usuário. Entretanto, as informações coletadas descrevem o usuário detalhadamente, assim é necessário cautela quanto à exposição desses dados, para evitar o uso indevido de informações pessoais. 
+É importante ainda ter em mente, que alguns dispositivos possuem capacidade de computacional limitada e restrições de consumo elétricos por terem  baterias limitadas, portanto, não suportam  sistemas complexos de criptografia por exigirem poder computacional elevado e, consequentemente, aumentando o consumo elétrico, sendo importante diversificar a criptografia para maior privacidade do usuário. Algoritmos mais simplificados de criptografia são mais adequados para dispositivos com restrição de recursos. Uma segunda solução é ocultar alguns dados, porém isso ainda é um obstáculo uma vez que os objetos conectados precisam ter acesso a tais informações. \cite{seguranca}
 
 \section{Protocolos de comunicação}
 \end{document}
