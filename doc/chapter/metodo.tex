@@ -96,15 +96,36 @@ Com base em todas as empresas analisadas e seus exemplos citados, o uso no Elixi
 \end{figure}
 
 
-\section{Aplicação com Nerves}
-\hspace*{3em}O primeiro passo para a utilização do framework Nerves em nosso projeto foi realizar o estudo da documentação. Após uma extensa revisão do documento, implementamos um projeto simples que foi sugerido pelo mesmo. Este, consistiu em controlar um led onboard do Raspberry pi a partir de uma requisição HTTP.\par
-Após consolidação do processo de compilação dessa aplicação, iniciamos o desenvolvimento do projeto de forma modular e gradativa. Primeiro, começamos com o controle dos GPIOs, em seguida com o sensor de temperatura/umidade e por fim o sensor de luminosidade. Para cada implementação  foi necessário localizar e estudar a melhor biblioteca disponível.\par 
-Com o desenvolvimento do firmware finalizado partimos para a integração da comunicação entre o firmware e o back-end, com a finalidade de testar todos os recursos implementados no firmware. Após a validação do funcionamento, iniciamos o desenvolvimento do front-end para criar uma interface intuitiva e fácil para o usuário.
 
 \section{Phoenix}
-\hspace*{3em}O framework Phoenix foi de extrema importância para o desenvolvimento do back-end desse projeto. Os primeiros passos foram estudar a documentação do framework e realizar as sugestões de projetos iniciais da documentação. Todo o desenvolvimento e simulação do webserver foi realizado em localhost (hospedeiro local). Então realizamos o desenvolvimento de um web server que consiste em configurar todos os parâmetros de acesso como porta e IP, além  das definições de rotas, definição do controlador e view (template). As rotas foram definidas de forma que representasse uma ação no dispositivo  empregando a arquitetura REST. O controlador foi configurado para receber um request (requisição) GET com uma simples rota e renderizar o template  JSON.\par  
-Após a consolidação e sucesso na etapa anterior, começamos a de fato desenvolver o back-end para o nosso projeto. Começamos com os recursos mais simples, como a definição para controlar os GPIOs e seguimos até a leitura de sensores mais complexos. Portanto, definimos todas as rotas necessárias para interagir com o dispositivo. Para cada rota definimos uma função específica no controlador que por sua vez recebe as requisições e realiza a lógica necessária para executar a ação. Dependo da requisição é necessário retornar informações, para tanto usamos templates  em formato JSON.  Todos os testes de requisições foram realizados com a ferramenta Postman que permite realizar diferentes tipos de requisições. Após a validação do funcionamento realizamos a integração com firmware. 
+\hspace*{3em}O framework Phoenix foi de extrema importância para o desenvolvimento do back-end desse projeto. Os primeiros passos foram estudar a documentação do framework e realizar as sugestões de projetos iniciais da documentação. Todo o desenvolvimento e simulação do webserver foi realizado em \emp{localhost} (hospedeiro local). Então realizamos o desenvolvimento de um web server que consiste em configurar todos os parâmetros de acesso como porta e IP, além  das definições de rotas, definição das funções do controlador e os templates do \emp{view}(dados visuais). As rotas foram definidas de forma que representasse uma ação no dispositivo  empregando a arquitetura REST. O controlador foi configurado para receber uma requisição GET com uma simples rota e renderizar o template  JSON.\par
+Após a consolidação e sucesso na etapa anterior, começamos a de fato desenvolver o back-end para o nosso projeto. Começamos com os recursos mais simples, como a definição para controlar os GPIOs e até a leitura de sensores mais complexos. Portanto, definimos todas as rotas necessárias para interagir com o dispositivo. Para cada rota definimos uma função específica no controlador que por sua vez recebe as requisições e realiza a lógica necessária para executar a ação. Dependo da requisição é necessário retornar informações, por tanto usamos templates  em formato JSON.  Todos os testes de requisições foram realizados com a ferramenta Postman que permite realizar diferentes tipos de requisições. Após a validação do funcionamento realizamos a integração com firmware.
+
+\begin{figure}[H]
+\centering
+\caption{Rotas definidas para acesso as recurcos do hardware}
+\includegraphics[width=1\textwidth]{assets/static/img/rotas.jpg}
+\label{fig:request_gpio}
+\begin{minipage}{0.5\textwidth}
+\end{minipage}
+\end{figure}
+
+
+\section{Aplicação com Nerves}
+\hspace*{3em}O primeiro passo para a utilização do framework Nerves em nosso projeto foi realizar o estudo da documentação. Após uma extensa revisão do documento, implementamos um projeto simples que foi sugerido pelo mesmo. Este, consistiu em controlar um led onboard do Raspberry pi a partir de uma requisição HTTP.\par
+Após consolidação do processo de compilação e entendimento da lógica aplicada nessa aplicação, iniciamos o desenvolvimento do projeto de forma modular e gradativa. Primeiro, começamos com o controle dos GPIOs, em seguida com o sensor de temperatura/umidade e por fim o sensor de luminosidade. Para cada implementação  foi necessário localizar e estudar os melhores recurso disponível.\par 
+Com o desenvolvimento do firmware finalizado partimos para a integração da comunicação entre o firmware e o back-end, com a finalidade de testar todos os recursos implementados no firmware. Após a validação do funcionamento, iniciamos o desenvolvimento do front-end para criar uma interface intuitiva e fácil para o usuário.
+
+\begin{figure}[H]
+\centering
+\caption{Resquisção para a escrita no GPIO 16}
+\includegraphics[width=0.5\textwidth]{assets/static/img/request.jpg}
+\label{fig:request_gpio}
+\begin{minipage}{0.5\textwidth}
+\end{minipage}
+\end{figure}
+
 
 \section{Aprendizado React e Desenvolvimento}
-\blindtext
+
 \end{document}

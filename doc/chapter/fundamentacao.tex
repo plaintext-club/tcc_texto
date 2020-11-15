@@ -75,7 +75,8 @@
 \hspace*{3em}REST (Transferência representacional de estado) API (Interface de programação de aplicação) analisando os conceitos isolados.\par
 API é um interface de comunicação  disponível por software com regras estabelecidas para que haja o entendimento de ambas as partes. Esse conceito é aplicado para criar uma camada de abstração, no qual para utilizar os recursos de um determinado software é apenas necessário o entendimento da interface disponibilizada por um software, eliminando a  necessidade do entendimento total do software, além de viabilizar o conceito de modularização de arquitetura de software. \cite{16} \par 
 REST é um modelo de arquitetura criado para suprir conceitos de qualidade e funcionalidade, em princípio para sistemas distribuídos. Acabou sendo utilizada largamente em servidores WEB, tanto para a maneira em que a arquitetura define um conjunto de restrições para uma arquitetura estilo REST, quanto para padrões uniformes para interfaces, sem conservação de estado e separação total do cliente e servidor. Com isso, permitindo a interoperabilidade entre sistemas. Quando um servidor WEB segue esses conceitos, pode ser denominado de REST FULL.\par
-Portando uma REST API é uma interface que aplica os conceito REST para sua implementação\cite{19}. Quando o protocolo HTTP é utilizado, o URI (Identificador de recursos uniformes) se torna uma representação dos dados e os métodos HTTP são utilizados para manipular esses dados \cite{16}, com os métodos:
+
+Portanto uma REST API é uma interface que aplica os conceito REST para sua implementação\cite{19}. Quando o protocolo HTTP é utilizado, o URI (Identificador de recursos uniformes) se torna uma representação dos dados e os métodos HTTP são utilizados para manipular esses dados \cite{16}, com os métodos:
 
 \begin{enumerate}[label=\alph*)]
 \itemsep0em
@@ -114,6 +115,7 @@ Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang no
 
 \subsection{Phoenix}
 \hspace*{3em}Phoenix é um framework desenvolvido em Elixir para implementação de aplicações WEB, que usa todo o potencial da linguagem Elixir, com isso desfrutando da concorrência fornecida pela VM BEAM, com baixa tolerância a falha e baixa latência.  Além de aumentar o desempenho do desenvolvimento de uma aplicação WEB também conta com diversos recurso que são disponibilizados de forma modular \cite{phoenix}. Na figura \ref{fig:diagrama_sw} temos um diagrama detalhado da arquitetura utilizada no projeto.
+
 
 \begin{figure}[H]
 \centering
@@ -194,3 +196,36 @@ O formato JSON, como mencionado, tem um visual mais limpo, com uma leitura mais 
 
 \section{Protocolos de comunicação}
 \end{document}
+\hspace*{3em}Com a demanda do uso de tecnologias relacionadas à área de Internet das Coisas, várias camadas de comunicação e estruturas se adaptam para maior praticidade do uso de dispositivos diversos, que por sua grande maioria se tratam de microcontroladores e sensores, na qual estão conectados entre si, seja por LAN (\emph{Local Area Network}) ou WiFi (\emph{Wireless Fidelity}). Para que essa comunicação seja eficaz e segura, foram padronizados protocolos de comunicação que são vastamente utilizados no período atual por várias empresas.
+
+\subsection{i2c}
+\hspace*{3em}O I2C é um protocolo de comunicação em que o dado é transferido \emph{bit} a \emph{bit} através de uma única conexão de uma maneira síncrona, fazendo com que a saída desse sinal seja baseada no clock (\emph{período de oscilação}) enviado do \emph{Master} (Mestre) ao \emph{Slave} (Escravo), onde esse clock é apenas dependente do Master. Esse método de comunicação necessita apenas de 2 conexões, o SDA (\emph{Serial Data Access}) e o SCL (\emph{Serial Clock Access}).
+
+\begin{figure}[H]
+\centering
+\caption{Protocolo I2C}
+\includegraphics[width=0.5\textwidth]{assets/static/img/i2c.jpg}
+\label{fig:i2c}
+
+\begin{minipage}{0.5\textwidth}
+\raggedright \footnotesize Fonte: Retirado de \acite{i2c} 
+\end{minipage}
+\end{figure}
+
+\hspace*{3em}Com a comunicação via I2C, os dados são quebrados em pequenos pacotes em que formam esse padrão. Esses pacotes contém informações do endereço do \emph{Slave}, \emph{bits} de condição de início e fim da menssagem transmitida, o dado a ser transmitido e um sinal de \emph{feedback} chamado de positivo ACK (\emph{Acknowledge bit}) quando a mensagem é entregue ao escravo, ou negativo NACK (\emph{No-acknowledge bit}) quando a mensagem não é entregue ao escravo, de acordo com a figura \ref{fig:i2c_structure}.
+
+\begin{figure}[H]
+\centering
+\caption{i2c_structure}
+\includegraphics[width=0.5\textwidth]{assets/static/img/i2c_structure.jpg}
+\label{fig:i2c_structure}
+
+\begin{minipage}{0.5\textwidth}
+\raggedright \footnotesize Fonte: Retirado de \cite{i2c_structure} 
+\end{minipage}
+\end{figure}
+
+\subsection{UART}
+\hspace*{3em}A comunicação UART (\emph{Universal Asynchronous Receiver-Transmitter}) é um dispositiivo presente dentro de um microcontrolador em que seu objetivo é controlar a entrada e saída de dados através de sequências de 8 \emph{bits}. Atualmente é o método mais comum para comunicação serial \emph{full-duplex} \cite{uart} A comunicação UART não se refere apenas à um protocolo, mas um conjuto completo de circuitos integrados. Os dispositivos UART possuem duas conexões, uma para transmitir dados (TX) e outra para receber os dados (RX), de uma maneira totalmente assíncrona ao \emph{clock}. Da mesma forma que citamos do I2C, o UART também utiliza \emph{bits} para identificação do início e fim do pacote enviado ou recebido. Importante citar que todos os dispositivos no circuito devem ter o mesmo \emph{baud rate} (taxa de transmissão) como padronização.
+\end{document}
+
