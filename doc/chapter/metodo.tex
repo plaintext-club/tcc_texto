@@ -126,6 +126,30 @@ Com o desenvolvimento do \emph{firmware} finalizado, partimos para a integraçã
 \end{minipage}
 \end{figure}
 
-\section{Aprendizado React e Desenvolvimento}
+\section{Interface de usuário}
+A interface do projeto tem como premissa apresentar as informações para o usuário de forma clara e objetiva. Sendo assim, criamos uma interface de tela única baseada em \emph{cards}. O resultado final está apresentado na Figura \ref{fig:ui}.\par
+Um \emph{card} representa uma entidade renderizada na tela que tem por objetivo apresentar para o usuário uma informação. Temos três tipos de \emph{cards}:
+
+\begin{enumerate}[label=\alph*)]
+\itemsep0em
+	\item DHT: exibe as informações fornecidas pelo sensor de temperatura. O botão ``REFRESH'' força a atualização do valor exibido.
+	\item Entrada: exibe o estado lógico da entrada escolhida. O botão ``REFRESH'' força a atualização do valor exibido.
+	\item Saída: exibe o estado lógico e apresenta opções para ligar e desligar a saída escolhida nos botões ``ON'' e ``OFF''.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\caption{Interface de usuário para controle do hardware}
+\includegraphics[width=1\textwidth]{assets/static/img/paralysis.png}
+\label{fig:ui}
+
+\begin{minipage}{0.5\textwidth}
+\end{minipage}
+\end{figure}
+
+O campo ``API URL'' deve ser preenchido com o endereço IP ou DNS do dispositivo na rede, para que possa acontecer a comunicação.
+
+A interface de usuário para controle do hardware foi desenvolvida utilizando um \emph{framework} de \emph{front-end} chamado \emph{React}, que usa uma abordagem modular para a composição de telas.
+Dentro do \emph{framework} os módulos que representam as entidades a serem rederizadas na tela são chamados de \emph{componentes}. Os \emph{cards} foram construídos dentro dessa abstração de componentes, assim conseguimos compor eles na tela de forma dinâmica.
 
 \end{document}
