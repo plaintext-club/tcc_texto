@@ -3,7 +3,6 @@
 
 \begin{document}
 \chapter{Fundamentação teórica}
-
 \hspace*{3em}Os conceitos abordados a seguir são de suma importância para compreensão do presente projeto.
 
 \section{Internet das Coisas}
@@ -30,9 +29,10 @@
 \end{figure}
 
 \subsection{Evolução da Internet das Coisas}
-
 \hspace*{3em}Na década de 90 a internet foi capaz de facilitar muitos negócios, porém era muito impactada ainda pela velocidade de conexão e dificuldade de acesso \cite{iothouse}. Nos anos 2000 a conectivade com a internet se tornou mais popular ao ponto de muitas aplicações se tornarem dependentes dela. Atualmente a dependência da internet aumentou porém, ainda é necessária a interação do ser humano e/ou de outras máquinas para que as ações sejam executadas. É nesse contexto que se insere a \emph{IoT},por exemplo, o acesso à uma página da internet para pesquisas ou realização vendas online podem ser executados de maneira dinâmica e automatizada. \par
 Essa ideia é mais comum ainda nos dias atuais, pois temos várias "coisas" dentro de residências que se comunicam de maneira automatizada e muitas vezes podem  ser controladas via um aplicativo de celular, um navegador de internet no computador ou até mesmo uma central eletrônica. Na Figura \ref{fig:iothou} temos um exemplo de uma casa inteligente conectada.
+
+
 
 \begin{figure}[H]
 \centering
@@ -46,7 +46,6 @@ Essa ideia é mais comum ainda nos dias atuais, pois temos várias "coisas" dent
 \end{figure}
 
 \subsection{Indústria 4.0}
-
 \hspace*{3em}Com a evolução da era digital, muitos setores foram impctados para ter seu melhor desempenho e crescimento. A transformação digitalização da manufatura que ocorreu durante vários anos, desde a primeira revolução industrial em que eram utilizadas máquinas à vapor, a segunda na qual utilizava eletricidade como revolução, a terceira em que se fez o uso de computadores e máquinas eletrônicas até a quarta na qual tende a emergir a terceira revolução com computadores mais avançados capazes de automatizar uma linha completa com sistemas inteligentes e interligados em que o ponto principal é o tratamento de dados sendo alimentados e gerados por esses computadores \cite{ind4}.A figura \ref{fig:ind} demonstra essa evolução.
 
 \begin{figure}[H]
@@ -69,7 +68,6 @@ Essa ideia é mais comum ainda nos dias atuais, pois temos várias "coisas" dent
     \item aprendizado de máquina (\emph{Machine Learning}).
 \end{enumerate}
 
-
 \hspace*{3em}Os exemplos citados são os meios utilizados para trazer valores dentro da indústria, por exemplo, para que sejam feitas análises através de inúmeros dados gerados e coletados sobre performance, manutenção, rendimento e defeitos com o objetivo de identificar oportunidades, otimizar a logística e sua cadeia de gestão (\emph{Supply Chain}). Robôs inteligentes para facilitar o processo ou logística de linhas, carros autônomos para automatizar o processo e segurança de locomoção, máquinas autônomas que possam ser totalmente independentes da interação humana para executar sua função e até impressão 3D são alguns dos muitos sucessos da aplicação da Indústria 4.0 no mercado atual. Apesar de parecer que estamos vivenciando essa revolução hoje em dia, estima-se que essa revolução irá permanecer em evolução durante 30 anos em que aos poucos as empresas vão adotando em seus processos.
 
 \section{Modelo utilizado para aplicação}
@@ -80,6 +78,7 @@ API é uma interface de comunicação  disponível por software com regras estab
 REST é um modelo de arquitetura criado para suprir conceitos de qualidade e funcionalidade, em princípio para sistemas distribuídos. Acabou sendo utilizada largamente em servidores WEB, tanto para a maneira em que a arquitetura define um conjunto de restrições para uma arquitetura estilo REST, quanto para padrões uniformes para interfaces, sem conservação de estado e separação total do cliente e servidor. Com isso, permitindo a interoperabilidade entre sistemas. Quando um servidor WEB segue esses conceitos, pode ser denominado de REST FULL.\par
 
 Portanto uma REST API é uma interface que aplica os conceito REST para sua implementação\cite{19}. Quando o protocolo HTTP é utilizado, o URI (Identificador de recursos uniformes) se torna uma representação dos dados e os métodos HTTP são utilizados para manipular esses dados \cite{16}, com os métodos:
+
 
 \begin{enumerate}[label=\alph*)]
 \itemsep0em
@@ -121,9 +120,7 @@ Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang no
 \end{enumerate}
 
 \subsection{Phoenix}
-
 \hspace*{3em}Phoenix é um \emph{framework} desenvolvido em Elixir para implementação de aplicações WEB, que usa todo o potencial da linguagem Elixir, com isso desfrutando da concorrência fornecida pela VM BEAM, com baixa tolerância a falha e baixa latência.  Além de aumentar o desempenho do desenvolvimento de uma aplicação WEB também conta com diversos recurso que são disponibilizados de forma modular \cite{phoenix}. Na figura \ref{fig:diagrama_sw} temos um diagrama detalhado da arquitetura utilizada no projeto.
-
 
 \begin{figure}[H]
 \centering
@@ -133,7 +130,6 @@ Elixir foi desenvolvida para ser executada na VM (máquina virtual) do Erlang no
 \end{figure}
 
 \section{Frontend}
-
 \subsection{Conceito de Front-end}
 \hspace*{3em}Em uma aplicação WEB a camada de \emph{front-end} é responsável por realizar a interação com usuário, e  também é conhecida por \emph{client-side} (lado do cliente), pois todos os recursos desenvolvidos são executados em um \emph{web browser} (navegador web) alocado em um computador pessoal. Para que essa interface com o usuário seja criada sob demanda, é necessário um fluxo de comunicação entre o \emph{browser} e o servidor. Em geral, o \emph{browser} solicita a partir do protocolo HTTP uma requisição para o servidor onde está hospedado todas as informações visuais necessárias, o backend do servidor recebe essa requisição, então realiza as alterações necessárias no servidor e retorna com o conteúdo solicitado. O conteúdo é composto por códigos HTML, CSS e JavaScript, o \emph{browser} recebe esse pacote e renderiza de forma visual a informação solicitada. Essas são as três tecnologias essenciais para a construção de uma interface visual WEB.\cite{frontend}
 
@@ -236,3 +232,4 @@ O formato JSON, como mencionado, tem um visual mais limpo, com uma leitura mais 
 \subsection{UART}
 \hspace*{3em}A comunicação UART (\emph{Universal Asynchronous Receiver-Transmitter}) é um dispositivo presente dentro de um microcontrolador em que seu objetivo é controlar a entrada e saída de dados através de sequências de 8 \emph{bits}. Atualmente é o método mais comum para comunicação serial \emph{full-duplex} \cite{uart} A comunicação UART não se refere apenas à um protocolo, mas um conjuto completo de circuitos integrados. Os dispositivos UART possuem duas conexões, uma para transmitir dados (TX) e outra para receber os dados (RX), de uma maneira totalmente assíncrona ao \emph{clock}. Da mesma forma que citamos do I2C, o UART também utiliza \emph{bits} para identificação do início e fim do pacote enviado ou recebido. Importante citar que todos os dispositivos no circuito devem ter o mesmo \emph{baud rate} (taxa de transmissão) como padronização.
 \end{document}
+
