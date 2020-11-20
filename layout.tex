@@ -1,20 +1,18 @@
 \documentclass[12pt, oneside, brazil, fleqn,
 	chapter=TITLE, section=TITLE]{abntex2}
-\usepackage[backend=biber, style=abnt]{biblatex}	
 
+\usepackage{style/abnt}
 \usepackage{style/fei}
 \usepackage{style/style}
 
-\addbibresource{References.bib}
-
 \author{
-	Henrique Casares\\
+	Henrique da Silva Casares\\
  	Vinicius Lopes Silva\\
-	Lucas Campos Martins Ferreira Braga
+	Lucas Campos Martins Ferreira Braga\\
 }
 \orientador{Prof. Dr. Victor Sonnenberg}
 
-\title{IoT para todos}
+\title{Plataforma IoT para Todos}
 \data{2020}
 \local{São Bernardo do Campo -- SP}
 \instituicao{Centro Universitário FEI}
@@ -31,10 +29,11 @@
 
 \subfile{doc/chapter/introducao.tex}
 \subfile{doc/chapter/fundamentacao.tex}
-\subfile{doc/chapter/hardware.tex}
-\subfile{doc/chapter/metodo.tex}
-\subfile{doc/chapter/consideracoes.tex}
+%\subfile{doc/chapter/hardware.tex}
+%\subfile{doc/chapter/metodo.tex}
+%\subfile{doc/chapter/consideracoes.tex}
 
 \nocite{*}
-\printbibliography[title=Referências] 
+\printbibliography[title=Referências]
+
 \end{document}
